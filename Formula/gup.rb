@@ -1,4 +1,4 @@
-class gup < Formula
+class Gup < Formula
   desc "Update binaries installed by 'go install' with goroutines."
   homepage "https://github.com/nao1215/gup"
   url "https://github.com/nao1215/gup/releases/download/v0.16.0/gup"
