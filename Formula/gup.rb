@@ -1,8 +1,8 @@
 class Gup < Formula
   desc "Update binaries installed by 'go install' with goroutines."
   homepage "https://github.com/nao1215/gup"
-  url "https://github.com/nao1215/gup/releases/download/v0.20.0/gup"
-  sha256 "2263e59b0b7149460bc10eb159742aa433cdcc8eb1bef204bb21b237d5d63c69"
+  url "https://github.com/nao1215/gup/releases/download/v0.20.1/gup"
+  sha256 "d20ca810ccf571c034ef20f0f06a3bcf4a136836c680e3642598c15ee057816e"
 
   def install
     bin.install "gup"
