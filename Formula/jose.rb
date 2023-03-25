@@ -1,8 +1,8 @@
 class Jose < Formula
   desc "CLI tool for JOSE (JSON Object Signing and Encryption)"
   homepage "https://github.com/nao1215/jose"
-  url "https://github.com/nao1215/jose/releases/download/v0.0.1/jose"
-  sha256 "d3ab83fcdc770e493e123209e3688f4eaabbe7abc24d6e3a05379e023227b1cc"
+  url "https://github.com/nao1215/jose/releases/download/v0.0.2/jose"
+  sha256 "29670c48a4cca13f19142bbb3ac8ecd03dff2e701670f7cc0f4b49c28e2f817c"
 
   def install
     bin.install "jose"
