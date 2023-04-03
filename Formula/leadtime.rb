@@ -1,4 +1,4 @@
-class LeadTime < Formula
+class Leadtime < Formula
   desc "caluculate PR lead time statistics on GitHub"
   homepage "https://github.com/nao1215/leadtime"
   url "https://github.com/nao1215/leadtime/releases/download/v0.0.4/leadtime"
