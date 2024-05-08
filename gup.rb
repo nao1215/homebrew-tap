@@ -5,21 +5,21 @@
 class Gup < Formula
   desc "gup - Update binaries installed by "go install""
   homepage ""
-  version "0.25.2"
+  version "0.26.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/gup/releases/download/v0.25.2/gup_0.25.2_darwin_amd64.tar.gz"
-      sha256 "f16e7558644a20f42e55689e1d54e38957054cbc24aebbcd6b1181cd9501317e"
+      url "https://github.com/nao1215/gup/releases/download/v0.26.0/gup_0.26.0_darwin_amd64.tar.gz"
+      sha256 "71192bf0542d83708871281b29419fab84bcca00f37b0221d789ea675273b04a"
 
       def install
         bin.install "gup"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/gup/releases/download/v0.25.2/gup_0.25.2_darwin_arm64.tar.gz"
-      sha256 "aea011a147bb7c8a1696980fdae6e0acf88d4073441cf3ab22e2041f86bc4fa2"
+      url "https://github.com/nao1215/gup/releases/download/v0.26.0/gup_0.26.0_darwin_arm64.tar.gz"
+      sha256 "45ed49ca639e81b61140f4e6684ad7717be49a6add877f4f222420658aacc8a5"
 
       def install
         bin.install "gup"
@@ -29,16 +29,16 @@ class Gup < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/gup/releases/download/v0.25.2/gup_0.25.2_linux_amd64.tar.gz"
-      sha256 "ca3bd0c3cadd13715d31cd962aafa2bfe58058ffd2f6f3e91ee7ab64bd7f0500"
+      url "https://github.com/nao1215/gup/releases/download/v0.26.0/gup_0.26.0_linux_amd64.tar.gz"
+      sha256 "a070ba73d2abc0d803e328c9b95c35b7268a0077bcd62cdd3a992d2889228bef"
 
       def install
         bin.install "gup"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/gup/releases/download/v0.25.2/gup_0.25.2_linux_arm64.tar.gz"
-      sha256 "26ba8a4bc1bacea8e59b935d83bb3f1a734226b9d66a07cabe55a8a81985dbf7"
+      url "https://github.com/nao1215/gup/releases/download/v0.26.0/gup_0.26.0_linux_arm64.tar.gz"
+      sha256 "ad2ce0bdc760b6e3ea96037e12c1af4748e4a8a16a4d969c9cc3e9d59aad70bf"
 
       def install
         bin.install "gup"
