@@ -5,21 +5,21 @@
 class Honeycomb < Formula
   desc "honeycomb - Nostr client CLI application for cross-platform"
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/nao1215/honeycomb/releases/download/v0.0.1/honeycomb_0.0.1_darwin_amd64.tar.gz"
-      sha256 "c66fc62800245954fbb7ead392a5033c0d965d19bb91642cd2a9410b760df7d7"
+      url "https://github.com/nao1215/honeycomb/releases/download/v0.0.2/honeycomb_0.0.2_darwin_amd64.tar.gz"
+      sha256 "ca8389944cdd640434255848d25bcb23fed8f700b03f630297a2518622725f32"
 
       def install
         bin.install "honeycomb"
       end
     end
     on_arm do
-      url "https://github.com/nao1215/honeycomb/releases/download/v0.0.1/honeycomb_0.0.1_darwin_arm64.tar.gz"
-      sha256 "62823fc0f0b57e09cd18967e55e9b32126bfbb3a2ce0f7f74c0e0c7d5aaba548"
+      url "https://github.com/nao1215/honeycomb/releases/download/v0.0.2/honeycomb_0.0.2_darwin_arm64.tar.gz"
+      sha256 "8bbfbff84e08f41ea6e106be9a7c84eb85d6080a9c082b906103a2ea70d10e9b"
 
       def install
         bin.install "honeycomb"
@@ -30,8 +30,8 @@ class Honeycomb < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/honeycomb/releases/download/v0.0.1/honeycomb_0.0.1_linux_amd64.tar.gz"
-        sha256 "a1ef67ba167ac26cb7ac1141fd228f61f4a10fc9a062a887a34b4eb0d40088ad"
+        url "https://github.com/nao1215/honeycomb/releases/download/v0.0.2/honeycomb_0.0.2_linux_amd64.tar.gz"
+        sha256 "32b3e6b0044f72a492d49c9744e325a30f09a7d9ab4720fd74d1b68470fcf9c6"
 
         def install
           bin.install "honeycomb"
@@ -40,8 +40,8 @@ class Honeycomb < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/honeycomb/releases/download/v0.0.1/honeycomb_0.0.1_linux_arm64.tar.gz"
-        sha256 "c89854f4ac52f7b250681eeb724a5db6a85c8f5e1020636fb7d70cca3d893dfa"
+        url "https://github.com/nao1215/honeycomb/releases/download/v0.0.2/honeycomb_0.0.2_linux_arm64.tar.gz"
+        sha256 "b9e599b093c7fe0cdd3ce1857ab825b21c1089341aedf61b97e638d21f6642bf"
 
         def install
           bin.install "honeycomb"
