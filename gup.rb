@@ -5,24 +5,30 @@
 class Gup < Formula
   desc "gup - Update binaries installed by 'go install'"
   homepage ""
-  version "0.27.3"
+  version "0.27.4"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.3/gup_0.27.3_darwin_amd64.tar.gz"
-      sha256 "670016ae2993723764d02fa4450440f6edb4f5e05368bc8f75ff960b53ec57e2"
+      url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_darwin_amd64.tar.gz"
+      sha256 "57cc18833af2d737ad6aa11b694116a8e7b50390ef3ae4255241127ef0ab7f3f"
 
       def install
         bin.install "gup"
+        bash_completion.install "completions/gup.bash" => "gup"
+        zsh_completion.install "completions/gup.zsh" => "gup"
+        fish_completion.install "completions/gup.fish"
       end
     end
     on_arm do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.3/gup_0.27.3_darwin_arm64.tar.gz"
-      sha256 "39f90abe0659eec203ad8287b7b2224602d7d1895baee85b2e39c91fcaf3d697"
+      url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_darwin_arm64.tar.gz"
+      sha256 "7fb83008eca9d0b65a278898bca0e62adaa493762045b62855139539442cc7ee"
 
       def install
         bin.install "gup"
+        bash_completion.install "completions/gup.bash" => "gup"
+        zsh_completion.install "completions/gup.zsh" => "gup"
+        fish_completion.install "completions/gup.fish"
       end
     end
   end
@@ -30,21 +36,27 @@ class Gup < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.3/gup_0.27.3_linux_amd64.tar.gz"
-        sha256 "7c3c01ca9da08d60b14e1f73f90ec4b65a68df85de84f4ba5cfe15cca61a869e"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_linux_amd64.tar.gz"
+        sha256 "77dc8f9ed64d8180b71dffd6921c5e6dfb13388d85f9e5a10efc05611849f1b2"
 
         def install
           bin.install "gup"
+          bash_completion.install "completions/gup.bash" => "gup"
+          zsh_completion.install "completions/gup.zsh" => "gup"
+          fish_completion.install "completions/gup.fish"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.3/gup_0.27.3_linux_arm64.tar.gz"
-        sha256 "3ebfd270ce8115cc13196e30d266d314456a71febd8cf789facf20cd567f3813"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_linux_arm64.tar.gz"
+        sha256 "e962f27cfb8156a39aefe0b969f2fae167a2bf5d4155e4feab90f1cc9ecfffde"
 
         def install
           bin.install "gup"
+          bash_completion.install "completions/gup.bash" => "gup"
+          zsh_completion.install "completions/gup.zsh" => "gup"
+          fish_completion.install "completions/gup.fish"
         end
       end
     end
