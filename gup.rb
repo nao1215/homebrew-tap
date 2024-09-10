@@ -5,13 +5,13 @@
 class Gup < Formula
   desc "gup - Update binaries installed by 'go install'"
   homepage ""
-  version "0.27.4"
+  version "0.27.5"
   license "Apache License 2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_darwin_amd64.tar.gz"
-      sha256 "57cc18833af2d737ad6aa11b694116a8e7b50390ef3ae4255241127ef0ab7f3f"
+      url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_darwin_amd64.tar.gz"
+      sha256 "fdc79daae4d05e3a173235a53e57f84f801afcf239579cec953c648ecd067965"
 
       def install
         bin.install "gup"
@@ -21,8 +21,8 @@ class Gup < Formula
       end
     end
     on_arm do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_darwin_arm64.tar.gz"
-      sha256 "7fb83008eca9d0b65a278898bca0e62adaa493762045b62855139539442cc7ee"
+      url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_darwin_arm64.tar.gz"
+      sha256 "bd57b53087bb985182a1b4d29d315d14486904b33321b7be7fe23b9c4da81253"
 
       def install
         bin.install "gup"
@@ -36,8 +36,8 @@ class Gup < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_linux_amd64.tar.gz"
-        sha256 "77dc8f9ed64d8180b71dffd6921c5e6dfb13388d85f9e5a10efc05611849f1b2"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_linux_amd64.tar.gz"
+        sha256 "0deb9dcf9ae934bcea330838976936dba8398feb3e5e8f44840af87df18997ec"
 
         def install
           bin.install "gup"
@@ -49,8 +49,8 @@ class Gup < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.4/gup_0.27.4_linux_arm64.tar.gz"
-        sha256 "e962f27cfb8156a39aefe0b969f2fae167a2bf5d4155e4feab90f1cc9ecfffde"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_linux_arm64.tar.gz"
+        sha256 "00b74f85d2a25e133cdb6c24ac183dbeca53f36070290b46c3209a73ae7aefa6"
 
         def install
           bin.install "gup"
