@@ -5,13 +5,13 @@
 class Gup < Formula
   desc "gup - Update binaries installed by 'go install'"
   homepage ""
-  version "0.27.5"
+  version "0.27.6"
   license "Apache License 2.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_darwin_amd64.tar.gz"
-      sha256 "fdc79daae4d05e3a173235a53e57f84f801afcf239579cec953c648ecd067965"
+    if Hardware::CPU.intel?
+      url "https://github.com/nao1215/gup/releases/download/v0.27.6/gup_0.27.6_darwin_amd64.tar.gz"
+      sha256 "dbe1871ce95e7e630492876addc0546abd43de338989378a8fcf25c3ea3aaa67"
 
       def install
         bin.install "gup"
@@ -20,9 +20,9 @@ class Gup < Formula
         fish_completion.install "completions/gup.fish"
       end
     end
-    on_arm do
-      url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_darwin_arm64.tar.gz"
-      sha256 "bd57b53087bb985182a1b4d29d315d14486904b33321b7be7fe23b9c4da81253"
+    if Hardware::CPU.arm?
+      url "https://github.com/nao1215/gup/releases/download/v0.27.6/gup_0.27.6_darwin_arm64.tar.gz"
+      sha256 "4fc6ee7a9ba35a42803e976bc3d8931ea934af51d6ee7966e4df65e07ece5c1d"
 
       def install
         bin.install "gup"
@@ -34,10 +34,10 @@ class Gup < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_linux_amd64.tar.gz"
-        sha256 "0deb9dcf9ae934bcea330838976936dba8398feb3e5e8f44840af87df18997ec"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.6/gup_0.27.6_linux_amd64.tar.gz"
+        sha256 "173a4d416a52b87a9a44b2a70c6604f7eda586be2f3a352dc9ec9bc68abafb5a"
 
         def install
           bin.install "gup"
@@ -47,10 +47,10 @@ class Gup < Formula
         end
       end
     end
-    on_arm do
+    if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/gup/releases/download/v0.27.5/gup_0.27.5_linux_arm64.tar.gz"
-        sha256 "00b74f85d2a25e133cdb6c24ac183dbeca53f36070290b46c3209a73ae7aefa6"
+        url "https://github.com/nao1215/gup/releases/download/v0.27.6/gup_0.27.6_linux_arm64.tar.gz"
+        sha256 "19d989fad29f5c5fba979ab45e6ab262753317389c017196f9823d4659dc20df"
 
         def install
           bin.install "gup"
