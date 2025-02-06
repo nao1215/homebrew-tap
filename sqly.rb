@@ -5,21 +5,21 @@
 class Sqly < Formula
   desc "sqly - eaisly execute SQL against CSV/TSV/LTSV/JSON and Microsoft Excel™ with shell."
   homepage ""
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqly/releases/download/v0.9.0/sqly_0.9.0_darwin_amd64.tar.gz"
-      sha256 "496bfeccacaad48d5c7e54b30a98d03aa87d895317905fd0a11e52667331ede5"
+      url "https://github.com/nao1215/sqly/releases/download/v0.10.0/sqly_0.10.0_darwin_amd64.tar.gz"
+      sha256 "b683cdaf8dc1dda1e4851aaaf057ed0c867b1bcfc5a516db4f5d776b67eb35a7"
 
       def install
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqly/releases/download/v0.9.0/sqly_0.9.0_darwin_arm64.tar.gz"
-      sha256 "c72f1907c4249da9b172b42e72d51bda63b9508b109ad172d41d2a9d7897520a"
+      url "https://github.com/nao1215/sqly/releases/download/v0.10.0/sqly_0.10.0_darwin_arm64.tar.gz"
+      sha256 "b2dbf9735082a6516ba17be0d868591e224c185b3b4fc92f673569a6e4f9316a"
 
       def install
         bin.install "sqly"
@@ -30,8 +30,8 @@ class Sqly < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqly/releases/download/v0.9.0/sqly_0.9.0_linux_amd64.tar.gz"
-        sha256 "160738e184330a5c425b714089b78c5bb7b49f168954aedec4952995e61ab1b3"
+        url "https://github.com/nao1215/sqly/releases/download/v0.10.0/sqly_0.10.0_linux_amd64.tar.gz"
+        sha256 "c6500d8ad7b0a336473d2cc5d8d76705f5e49fd33dc748828e69e7a47f5a5903"
 
         def install
           bin.install "sqly"
@@ -40,8 +40,8 @@ class Sqly < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqly/releases/download/v0.9.0/sqly_0.9.0_linux_arm64.tar.gz"
-        sha256 "a00c5c33b964b7fb055d6ccba37fc4adb874ed159fb0955fa26acc82d3dfccb5"
+        url "https://github.com/nao1215/sqly/releases/download/v0.10.0/sqly_0.10.0_linux_arm64.tar.gz"
+        sha256 "0a315adcedde8a207161171ec6af518fac0a8472dcbfbcf91b3c483427304c89"
 
         def install
           bin.install "sqly"
