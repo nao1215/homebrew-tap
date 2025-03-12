@@ -5,21 +5,21 @@
 class Sqluv < Formula
   desc "sqluv - simple terminal UI for DBMS & local CSV/TSV/LTSV"
   homepage ""
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.1.5/sqly_0.1.5_darwin_amd64.tar.gz"
-      sha256 "e67c5ce2e8c0136b92cb8df7a97149f7e226668f1c5f7ecd60eb36078929d587"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.1.6/sqly_0.1.6_darwin_amd64.tar.gz"
+      sha256 "7b4575153b1fa6854bb6387feb950dcbc80fa56dc48ad4a1509fc678de2c8710"
 
       def install
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.1.5/sqly_0.1.5_darwin_arm64.tar.gz"
-      sha256 "e37135962c3b3ace70a7261437d506165cb431389feeee782993e0ab65b62c47"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.1.6/sqly_0.1.6_darwin_arm64.tar.gz"
+      sha256 "d0e52b11c5845ffb7078601bbb0cda673b1a11c714dd57090c1d41caf08dc41d"
 
       def install
         bin.install "sqly"
@@ -30,8 +30,8 @@ class Sqluv < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.1.5/sqly_0.1.5_linux_amd64.tar.gz"
-        sha256 "20d08e81e922f22d47f94eed6761078925b018ca63308a11727989e63aa39186"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.1.6/sqly_0.1.6_linux_amd64.tar.gz"
+        sha256 "481884f6fc3fe75ee371e8254861cd66c8dd908693b559251da64bf623f4039a"
 
         def install
           bin.install "sqly"
@@ -40,8 +40,8 @@ class Sqluv < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.1.5/sqly_0.1.5_linux_arm64.tar.gz"
-        sha256 "22c974bf69fd9bd7496676faa85f89c6ee2198b1382a64c726623bffa21e4177"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.1.6/sqly_0.1.6_linux_arm64.tar.gz"
+        sha256 "9848b26ea68f3e9c751e33bb888536d21ba88123f035860c667a2376581259be"
 
         def install
           bin.install "sqly"
