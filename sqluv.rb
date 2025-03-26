@@ -5,24 +5,24 @@
 class Sqluv < Formula
   desc "sqluv - simple terminal UI for DBMS & local CSV/TSV/LTSV"
   homepage ""
-  version "0.3.3"
+  version "0.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.3.3/sqly_0.3.3_darwin_amd64.tar.gz"
-      sha256 "f2298ff86ffb82fc6099a1126fe692eace00cdea75393de5ac62ed7c3cce8bb5"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.3.4/sqluv_0.3.4_darwin_amd64.tar.gz"
+      sha256 "94051061ab6b7326a2a2532c64ae835a445ed362dd814210f709d3fa8d0e693d"
 
       def install
-        bin.install "sqly"
+        bin.install "sqluv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.3.3/sqly_0.3.3_darwin_arm64.tar.gz"
-      sha256 "9a334a5012a77e62a0170c09f71de855ed034e94ab3c6064f2ebb07f088531ca"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.3.4/sqluv_0.3.4_darwin_arm64.tar.gz"
+      sha256 "7e47454c8907b08bcb5030b8f08372b9d3b97e5e55faa34ae39f2e99ce013e43"
 
       def install
-        bin.install "sqly"
+        bin.install "sqluv"
       end
     end
   end
@@ -30,21 +30,21 @@ class Sqluv < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.3.3/sqly_0.3.3_linux_amd64.tar.gz"
-        sha256 "a65ae45ae617893cb6303efa5db6e6ce514fc670320f0273b6a6809869e95a32"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.3.4/sqluv_0.3.4_linux_amd64.tar.gz"
+        sha256 "6b092670ebdb85f5ae60419a1450e47666715c24491a154535f9b5c0406c242e"
 
         def install
-          bin.install "sqly"
+          bin.install "sqluv"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.3.3/sqly_0.3.3_linux_arm64.tar.gz"
-        sha256 "065dcee0065fc3f3318c27bfcaf17a7acaa8dcbb67ca7f92740de0ecf884b4d2"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.3.4/sqluv_0.3.4_linux_arm64.tar.gz"
+        sha256 "73f0dd699c98bff8a6f035cb17429f2cb578b6234d79f3a68ff30cb192280957"
 
         def install
-          bin.install "sqly"
+          bin.install "sqluv"
         end
       end
     end
