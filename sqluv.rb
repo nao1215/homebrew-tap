@@ -5,21 +5,21 @@
 class Sqluv < Formula
   desc "sqluv - simple terminal UI for DBMS & local CSV/TSV/LTSV"
   homepage ""
-  version "0.4.5"
+  version "0.4.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.4.5/sqluv_0.4.5_darwin_amd64.tar.gz"
-      sha256 "b277ed8da9e01ea5cee96a43cf0e9241b6d2e6c8409fde0a9884fa016f9f8353"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.4.6/sqluv_0.4.6_darwin_amd64.tar.gz"
+      sha256 "fafd9433d2269f09418a9c6ea4bad2893cb51dfbe0491b8a470f71bb010aaf31"
 
       def install
         bin.install "sqluv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqluv/releases/download/v0.4.5/sqluv_0.4.5_darwin_arm64.tar.gz"
-      sha256 "d7d6589416191b5d8fa810dff9d67a90ee3e5fa083d96eee110fdc77f12df097"
+      url "https://github.com/nao1215/sqluv/releases/download/v0.4.6/sqluv_0.4.6_darwin_arm64.tar.gz"
+      sha256 "0685357839ebd786968cdc802f400857706b38185ba306c8a91c002d5ec32593"
 
       def install
         bin.install "sqluv"
@@ -30,8 +30,8 @@ class Sqluv < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.4.5/sqluv_0.4.5_linux_amd64.tar.gz"
-        sha256 "3c56d867aeb758003c19ae61fc250434e897cdcdffef74cec87ec582f2330ed9"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.4.6/sqluv_0.4.6_linux_amd64.tar.gz"
+        sha256 "b5a4ba58977d6979e107d4c401c945268dae932f2d9ce4b51496ee3492e80b91"
 
         def install
           bin.install "sqluv"
@@ -40,8 +40,8 @@ class Sqluv < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/nao1215/sqluv/releases/download/v0.4.5/sqluv_0.4.5_linux_arm64.tar.gz"
-        sha256 "f58afe8ff0e9684653f8e235d6cc4270776bc940f9abfa683f962412baefbb95"
+        url "https://github.com/nao1215/sqluv/releases/download/v0.4.6/sqluv_0.4.6_linux_arm64.tar.gz"
+        sha256 "1488e1075cd632ea5d4cbc79d47186ade814519ce72ea78067bfb6f71a7c8043"
 
         def install
           bin.install "sqluv"
