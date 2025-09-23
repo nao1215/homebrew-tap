@@ -5,21 +5,21 @@
 class Sqly < Formula
   desc "sqly - eaisly execute SQL against CSV/TSV/LTSV/JSON and Microsoft Excel™ with shell."
   homepage ""
-  version "0.13.0"
+  version "0.14.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqly/releases/download/v0.13.0/sqly_0.13.0_darwin_amd64.tar.gz"
-      sha256 "f9a40725adbffc2d1d46353eaeb9cdeb695d2c54bbfd836c1c9aaa7d9466c058"
+      url "https://github.com/nao1215/sqly/releases/download/v0.14.0/sqly_0.14.0_darwin_amd64.tar.gz"
+      sha256 "f44e4db79a1e914b0385b81ad1519e1eef63f84eaf615c96a765fadcca77aa2a"
 
       def install
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqly/releases/download/v0.13.0/sqly_0.13.0_darwin_arm64.tar.gz"
-      sha256 "87ed5c1a9aed6d0c3b3f2dbc6f2688622f2ea55c4a31d2ae4a0c5595377b4833"
+      url "https://github.com/nao1215/sqly/releases/download/v0.14.0/sqly_0.14.0_darwin_arm64.tar.gz"
+      sha256 "e64f241afe8f92a445161f5483ac17f114b297eeb225c66a3ed5119e905b46dc"
 
       def install
         bin.install "sqly"
@@ -29,15 +29,15 @@ class Sqly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v0.13.0/sqly_0.13.0_linux_amd64.tar.gz"
-      sha256 "76ba873b6a5785eb45ca8e165095e2301f6cf76bf7b0e3e33e9916153c0b8487"
+      url "https://github.com/nao1215/sqly/releases/download/v0.14.0/sqly_0.14.0_linux_amd64.tar.gz"
+      sha256 "e614b1b8c1229cd3022845b1abe310eb627850275be7f2ea78072b63b9f6360b"
       def install
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v0.13.0/sqly_0.13.0_linux_arm64.tar.gz"
-      sha256 "3ae67f5104607821c61abfabda17e7abba4fd40a0c1f404a3f180c9e7c7a2531"
+      url "https://github.com/nao1215/sqly/releases/download/v0.14.0/sqly_0.14.0_linux_arm64.tar.gz"
+      sha256 "0ce6f908083b066659eb52426ce76be27760277500bdac8757ddead6080fb6fa"
       def install
         bin.install "sqly"
       end
