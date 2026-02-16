@@ -5,13 +5,13 @@
 class Gup < Formula
   desc "gup - Update binaries installed by 'go install'"
   homepage ""
-  version "1.0.0"
+  version "1.1.0"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/gup/releases/download/v1.0.0/gup_1.0.0_darwin_amd64.tar.gz"
-      sha256 "311b3df091af0c682086df4c24a6f48aac6f860bca240d4e4f1172623d626e13"
+      url "https://github.com/nao1215/gup/releases/download/v1.1.0/gup_1.1.0_darwin_amd64.tar.gz"
+      sha256 "1f195acef3d248c8752aacb0e00eda2176626cdc764dfb2142a9e0d4052a869b"
 
       def install
         bin.install "gup"
@@ -21,8 +21,8 @@ class Gup < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/gup/releases/download/v1.0.0/gup_1.0.0_darwin_arm64.tar.gz"
-      sha256 "5bdfb03fc1fa48bd5ad37f4b39951c7c80bdd9c68232add98c37b354af8211fc"
+      url "https://github.com/nao1215/gup/releases/download/v1.1.0/gup_1.1.0_darwin_arm64.tar.gz"
+      sha256 "2dd4b41d761204637845f268a02a310a7b15d14af13cb94eb6afd228669985f1"
 
       def install
         bin.install "gup"
@@ -35,8 +35,8 @@ class Gup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/gup/releases/download/v1.0.0/gup_1.0.0_linux_amd64.tar.gz"
-      sha256 "5343edb87345f6f8772872f701d96cba8ac89b6fdf54de15ebbd06a1ea583f1c"
+      url "https://github.com/nao1215/gup/releases/download/v1.1.0/gup_1.1.0_linux_amd64.tar.gz"
+      sha256 "ac0195293322d5c13de73353baeee477c7f2b0c56943389712104d585aeef4ae"
       def install
         bin.install "gup"
         bash_completion.install "completions/gup.bash" => "gup"
@@ -45,8 +45,8 @@ class Gup < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/gup/releases/download/v1.0.0/gup_1.0.0_linux_arm64.tar.gz"
-      sha256 "e8f83cc9dabbda2e3cf34dc6cee48745e9977ef4363121fe22b96663a6e6290f"
+      url "https://github.com/nao1215/gup/releases/download/v1.1.0/gup_1.1.0_linux_arm64.tar.gz"
+      sha256 "1f13ef31a44de15dbc45607d29b6a437211fe35865030eb755c6b3a8b28ec2d0"
       def install
         bin.install "gup"
         bash_completion.install "completions/gup.bash" => "gup"
