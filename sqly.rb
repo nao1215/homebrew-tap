@@ -5,23 +5,23 @@
 class Sqly < Formula
   desc "sqly - eaisly execute SQL against CSV/TSV/LTSV/JSON and Microsoft Excel™ with shell."
   homepage ""
-  version "0.14.3"
+  version "0.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqly/releases/download/v0.14.3/sqly_0.14.3_darwin_amd64.tar.gz"
-      sha256 "0216828f85c511feb109b079d929d8a0d0b2a050990372e5b3952d6873d66b15"
+      url "https://github.com/nao1215/sqly/releases/download/v0.15.0/sqly_0.15.0_darwin_amd64.tar.gz"
+      sha256 "f36e7ad0835b5dc53bc9a2f7d2bc05393ebc52ec4deea656a929e82e7acfc5e3"
 
-      def install
+      define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqly/releases/download/v0.14.3/sqly_0.14.3_darwin_arm64.tar.gz"
-      sha256 "0083d8ad0611c5e433fdce5b06a67f146c44f6b6d93f5f3ab7d75f224b06c416"
+      url "https://github.com/nao1215/sqly/releases/download/v0.15.0/sqly_0.15.0_darwin_arm64.tar.gz"
+      sha256 "86ba7d5ad4b670797cf9d14b727bd62b09624c7a529ccaeb058402ada19dda91"
 
-      def install
+      define_method(:install) do
         bin.install "sqly"
       end
     end
@@ -29,16 +29,16 @@ class Sqly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v0.14.3/sqly_0.14.3_linux_amd64.tar.gz"
-      sha256 "fb566abf2e43cedae05661539817142e315cfb83a2952d5eb1dab9b732c2f9ec"
-      def install
+      url "https://github.com/nao1215/sqly/releases/download/v0.15.0/sqly_0.15.0_linux_amd64.tar.gz"
+      sha256 "46da0e44b253723ea1c7d7cbd9e76359edcbf6f2d964b0d0fca8623eb2e5389e"
+      define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v0.14.3/sqly_0.14.3_linux_arm64.tar.gz"
-      sha256 "98c7cceff9e3d9649f0f3d6e2562de69e10b2dc6a73d1e15809ee035bfe0d170"
-      def install
+      url "https://github.com/nao1215/sqly/releases/download/v0.15.0/sqly_0.15.0_linux_arm64.tar.gz"
+      sha256 "b4b4313f8edc0a517ec502ce5be6be324a7884e0a61fa0e59f27dcee2de6bd81"
+      define_method(:install) do
         bin.install "sqly"
       end
     end
