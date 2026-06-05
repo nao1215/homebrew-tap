@@ -5,23 +5,23 @@
 class Onionscan < Formula
   desc "OnionScan - Security auditing tool for Tor hidden services (.onion addresses)"
   homepage ""
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/onionscan/releases/download/v0.2.0/onionscan_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d4d4f75503fdde5d5747908623e3deb5c1d929671d1188416e322fdbb9b40989"
+      url "https://github.com/nao1215/onionscan/releases/download/v0.2.1/onionscan_0.2.1_darwin_amd64.tar.gz"
+      sha256 "06d8a5006be54d0117da6ca460b5b56a7090f42b592af551a409cd866eacba55"
 
-      def install
+      define_method(:install) do
         bin.install "onionscan"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/onionscan/releases/download/v0.2.0/onionscan_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e038aa5f2c0e95fddb7c4e808b0dfff4e92eec18b62caf8e4b73b442ad434002"
+      url "https://github.com/nao1215/onionscan/releases/download/v0.2.1/onionscan_0.2.1_darwin_arm64.tar.gz"
+      sha256 "7095ad7f8524ef7f0c884c63ce240d849e3b372a33ac76bd7d1f2f8151e283e6"
 
-      def install
+      define_method(:install) do
         bin.install "onionscan"
       end
     end
@@ -29,16 +29,16 @@ class Onionscan < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/onionscan/releases/download/v0.2.0/onionscan_0.2.0_linux_amd64.tar.gz"
-      sha256 "0e511ef823df9631e9a08975d5bb0b0cf6de60df955344a8f391a2f8b2772135"
-      def install
+      url "https://github.com/nao1215/onionscan/releases/download/v0.2.1/onionscan_0.2.1_linux_amd64.tar.gz"
+      sha256 "fc47f9e3546ef53612f2e1a30bd3e0d03b7097aa1c3bf1a5b2e8c92ea9fa75c2"
+      define_method(:install) do
         bin.install "onionscan"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/onionscan/releases/download/v0.2.0/onionscan_0.2.0_linux_arm64.tar.gz"
-      sha256 "d7258e41b5919c7e325bb2e3b9f2d5d9d47a09b4c3dd602d7bd8c8f93ecc000b"
-      def install
+      url "https://github.com/nao1215/onionscan/releases/download/v0.2.1/onionscan_0.2.1_linux_arm64.tar.gz"
+      sha256 "210b1a8fc86213b947a20c86356516d78194c83c1302519f4701486e11346179"
+      define_method(:install) do
         bin.install "onionscan"
       end
     end
