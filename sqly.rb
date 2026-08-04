@@ -5,21 +5,21 @@
 class Sqly < Formula
   desc "sqly - easily execute SQL against CSV/TSV/LTSV/JSON and Microsoft Excel™ with shell."
   homepage ""
-  version "1.0.0-rc1"
+  version "1.0.0-rc2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc1/sqly_1.0.0-rc1_darwin_amd64.tar.gz"
-      sha256 "068f863e98a8d0ffb17d070aae023744a74e3925665c01d750436a5c2b56ee0e"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc2/sqly_1.0.0-rc2_darwin_amd64.tar.gz"
+      sha256 "5324f096e6f49852fa3898257a6374bc5725c6fa3b18c014b8e362b0138d2570"
 
       define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc1/sqly_1.0.0-rc1_darwin_arm64.tar.gz"
-      sha256 "a2eb5801004d36cdf9b769945f5c3dc4b4ef9f892e3ffb1059a096df237db515"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc2/sqly_1.0.0-rc2_darwin_arm64.tar.gz"
+      sha256 "c65dd8276c94cb693ea60b888062be47b49b95e3b0899031badfc8f14c6dca87"
 
       define_method(:install) do
         bin.install "sqly"
@@ -29,15 +29,15 @@ class Sqly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc1/sqly_1.0.0-rc1_linux_amd64.tar.gz"
-      sha256 "5d3feba35780ce1e391609d5816bd2a76ccaf28fbdd9b6d0d2aba8c153c438df"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc2/sqly_1.0.0-rc2_linux_amd64.tar.gz"
+      sha256 "81d7e9e7b73b6b5c5e17512e8d3f03002e5821301555d08ffd07123b60aaa6cb"
       define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc1/sqly_1.0.0-rc1_linux_arm64.tar.gz"
-      sha256 "44ddc329bbcb5376f9622022d5d7e7d059380b35795544b10a09e9b6f7b96a49"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.0-rc2/sqly_1.0.0-rc2_linux_arm64.tar.gz"
+      sha256 "6815f2dd538701f6cd364cb2efab351451cad88b203ce93024d77cfa80f71fec"
       define_method(:install) do
         bin.install "sqly"
       end
