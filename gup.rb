@@ -5,13 +5,13 @@
 class Gup < Formula
   desc "Fast manager for Go-installed binaries in $GOBIN: update, export/import, and migrate toolsets across machines"
   homepage ""
-  version "1.8.0"
+  version "1.8.1"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/gup/releases/download/v1.8.0/gup_1.8.0_darwin_amd64.tar.gz"
-      sha256 "7dac597601bdd6eeab840c320d500df8d0ca8ca8f7571ed0bf68926bd091275c"
+      url "https://github.com/nao1215/gup/releases/download/v1.8.1/gup_1.8.1_darwin_amd64.tar.gz"
+      sha256 "5e71e0fde26bec412b73bffd7af728d38daa739733ea80e3c2e8d5335c840f5e"
 
       define_method(:install) do
         bin.install "gup"
@@ -21,8 +21,8 @@ class Gup < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/gup/releases/download/v1.8.0/gup_1.8.0_darwin_arm64.tar.gz"
-      sha256 "2f4834dd8cc6fe087d3ea419618f6fc75fc134680942774cfa3b18e58b358eea"
+      url "https://github.com/nao1215/gup/releases/download/v1.8.1/gup_1.8.1_darwin_arm64.tar.gz"
+      sha256 "171c248655a7310aa56f72e75e30335c69da2212f847f0b33628b5ee8bc75a99"
 
       define_method(:install) do
         bin.install "gup"
@@ -35,8 +35,8 @@ class Gup < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/gup/releases/download/v1.8.0/gup_1.8.0_linux_amd64.tar.gz"
-      sha256 "d45843fc6fed99f8268b141b93aaa488b0beac773cffd918392a15334ccfca5e"
+      url "https://github.com/nao1215/gup/releases/download/v1.8.1/gup_1.8.1_linux_amd64.tar.gz"
+      sha256 "7ee0dbb3c043f7e2d1afd0b44bad2f4fdae647e7245246b9e0ff75524c48b76d"
       define_method(:install) do
         bin.install "gup"
         bash_completion.install "completions/gup.bash" => "gup"
@@ -45,8 +45,8 @@ class Gup < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/gup/releases/download/v1.8.0/gup_1.8.0_linux_arm64.tar.gz"
-      sha256 "b38a32e6dcdece3c40f6747ca0ca6036624c259be4f9fd43fb7893ee9d3119c6"
+      url "https://github.com/nao1215/gup/releases/download/v1.8.1/gup_1.8.1_linux_arm64.tar.gz"
+      sha256 "562cbf136502ba5b93eb474a1f42d6e1e29b93abc5bd864c2c392e129538591e"
       define_method(:install) do
         bin.install "gup"
         bash_completion.install "completions/gup.bash" => "gup"
