@@ -5,21 +5,21 @@
 class Sqly < Formula
   desc "SQL shell for CSV/TSV/LTSV/JSON/JSONL/Parquet/Excel/ACH/Fedwire + compressed"
   homepage ""
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0/sqly_1.0.0_darwin_amd64.tar.gz"
-      sha256 "7d88c61b37485016b6aa5b90ac788c885bac260d043f2e81df0d62e058f94400"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.1/sqly_1.0.1_darwin_amd64.tar.gz"
+      sha256 "b0c07705666d353e4fbe487287d997a49c7ca4558e05d7dd1d293660e661cad2"
 
       define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0/sqly_1.0.0_darwin_arm64.tar.gz"
-      sha256 "054293e39596f4c14cd099652574eae65f51c07653392fa5f6bd4c846ea01914"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.1/sqly_1.0.1_darwin_arm64.tar.gz"
+      sha256 "5ded6b1469abe94b88af0b301840938159e636f6ad4d7d8a0762068be6adcbd6"
 
       define_method(:install) do
         bin.install "sqly"
@@ -29,15 +29,15 @@ class Sqly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0/sqly_1.0.0_linux_amd64.tar.gz"
-      sha256 "55af851722843c51cfc2afba916c7aa205b2277510ab93fc65affdb2ad61d141"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.1/sqly_1.0.1_linux_amd64.tar.gz"
+      sha256 "ae70024c1c2f8719a99258f1f11d8d81445b3eeeabbdee71679a8eb0fb326157"
       define_method(:install) do
         bin.install "sqly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/sqly/releases/download/v1.0.0/sqly_1.0.0_linux_arm64.tar.gz"
-      sha256 "d3a8ab9c07a8b5166426b274745198dd16d4c05ccaa0b048e30bc6a03617d0f5"
+      url "https://github.com/nao1215/sqly/releases/download/v1.0.1/sqly_1.0.1_linux_arm64.tar.gz"
+      sha256 "3f796c534f0201b634ef7fbe657521cb76253df6180d8b4daa7ba2622110629d"
       define_method(:install) do
         bin.install "sqly"
       end
