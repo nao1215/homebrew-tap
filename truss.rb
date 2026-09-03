@@ -4,30 +4,30 @@
 class Truss < Formula
   desc "Rust image toolkit for CLI, HTTP, and WASM workflows"
   homepage "https://github.com/nao1215/truss"
-  version "0.24.0"
+  version "0.25.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/truss/releases/download/v0.24.0/truss-v0.24.0-x86_64-apple-darwin.tar.gz"
-      sha256 "87f0bbe2afeb587fa2987141b25d7d385dc2854d95f632054f24262690cda0b2"
+      url "https://github.com/nao1215/truss/releases/download/v0.25.0/truss-v0.25.0-x86_64-apple-darwin.tar.gz"
+      sha256 "c162813e78ecd1a006f769675862785a9ad92aca055938b613dd7d111f916439"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/truss/releases/download/v0.24.0/truss-v0.24.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5c053dc296e4448bd93fabe17c81ec4d8f4553f4522bc8f49023121909471ffa"
+      url "https://github.com/nao1215/truss/releases/download/v0.25.0/truss-v0.25.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7602a569643a036a6475d7a7e9638bfe8b9994c51d31bed258494a50ea5d4aed"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/truss/releases/download/v0.24.0/truss-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bbf9237b2c90e62425c2e7cc559c3e527a9b8d114dc87ce433634c9b8b32f96a"
+      url "https://github.com/nao1215/truss/releases/download/v0.25.0/truss-v0.25.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f3bc5498587804d7307338a4818d22d4993dc70329844004424655e24773e62d"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/truss/releases/download/v0.24.0/truss-v0.24.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a455e642ea8e6a0e9b799a59ca8341835c9e8a993ada7abc742ed426ab2f17cb"
+      url "https://github.com/nao1215/truss/releases/download/v0.25.0/truss-v0.25.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3d681d667228aa4a38ba7bd7e4692d11a0d821557e0af94684026535ff41b082"
     end
   end
 
