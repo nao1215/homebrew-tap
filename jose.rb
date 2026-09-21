@@ -5,42 +5,40 @@
 class Jose < Formula
   desc "CLI tool for JOSE - generate JWK/JWKS, sign and verify JWS, encrypt and decrypt JWE"
   homepage "https://nao1215.github.io/jose/"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.0/jose_0.4.0_darwin_amd64.tar.gz"
-      sha256 "2c9f81ece8f7f21d5be8ed7d6086304fbd3a7b862ab6ce146b33440986ea38cf"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_darwin_amd64.tar.gz"
+      sha256 "525f9ce3c78257f13a7db91833e3867795fa5f1573f28bb84dd49a8d4e77ec07"
 
-      def install
+      define_method(:install) do
         bin.install "jose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.0/jose_0.4.0_darwin_arm64.tar.gz"
-      sha256 "e57d730c67755a0f7d6b746f1dceec8868956bcbbb7df5806ac7d229297f5c81"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_darwin_arm64.tar.gz"
+      sha256 "8db239b893c8169ac332f6f3039cabefb740c116313f7d70c99661f0810c28aa"
 
-      def install
+      define_method(:install) do
         bin.install "jose"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.0/jose_0.4.0_linux_amd64.tar.gz"
-      sha256 "b6a7b1d16498bb3a805fafde21b49c3a7dcb36febb30a7b6d6915a89e8d30dd6"
-
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_linux_amd64.tar.gz"
+      sha256 "c6c16f2a1884ddb4aa655c202dd8ab0c4427f0309b38499fa6162276a621ad61"
+      define_method(:install) do
         bin.install "jose"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.0/jose_0.4.0_linux_arm64.tar.gz"
-      sha256 "95310cbfc03d055d586040d6343692891208ad30a4afe835f7ea3bf494c18c1d"
-
-      def install
+      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_linux_arm64.tar.gz"
+      sha256 "f0f4a93b4d3e1c58bd322750129e8018659aff39d2289061922481a61937d1bc"
+      define_method(:install) do
         bin.install "jose"
       end
     end
