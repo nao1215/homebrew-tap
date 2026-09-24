@@ -4,30 +4,30 @@
 class Bsky < Formula
   desc "Bluesky client for the terminal that shows pictures and videos inline"
   homepage "https://github.com/nao1215/bluesky-terminal-client"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.4.0/bsky-v0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8fb3cf80aa28d7ceaf9bdf0353d4b3d9cb0e374b9053a3d036eb3c7ed6a4d64d"
+      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.5.0/bsky-v0.5.0-x86_64-apple-darwin.tar.gz"
+      sha256 "c8a42fc5a6c31f443ce28073d87e811d8bab522182b95da94ff74525a5d5fc5b"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.4.0/bsky-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d841c34c966aad75f8c8cdb032bfa0f5aba8010f9b0dd1090dceaeb7359bbc39"
+      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.5.0/bsky-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "0676038c769fca619ee4eb1f22615e5eb5401029b98d5cc449a37d05cef3a83f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.4.0/bsky-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8e8e56101fd359715ee95dfaefc14dc77406e4858e58645c7e0d5fa46fe8eae8"
+      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.5.0/bsky-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "406e8e3d98644e92cbcd1291e59004e6a85f53b00536ec6a939ca25221998517"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.4.0/bsky-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "73c9d9580a8cd0ba9e28ef6cfc05128517231e286181c11c1e77ddbda3bc346b"
+      url "https://github.com/nao1215/bluesky-terminal-client/releases/download/v0.5.0/bsky-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f684500b7ee0fe4d94fa02d79dbb7b9958d3d64fef302989b75101891bf727d8"
     end
   end
 
