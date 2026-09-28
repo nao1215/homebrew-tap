@@ -5,21 +5,21 @@
 class Jose < Formula
   desc "CLI tool for JOSE - generate JWK/JWKS, sign and verify JWS, encrypt and decrypt JWE"
   homepage "https://nao1215.github.io/jose/"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_darwin_amd64.tar.gz"
-      sha256 "525f9ce3c78257f13a7db91833e3867795fa5f1573f28bb84dd49a8d4e77ec07"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.2/jose_0.4.2_darwin_amd64.tar.gz"
+      sha256 "52c0ec8633ebfc15aacbece8c09728f5c9e9e6eac1f31908691c52dc4b6fff72"
 
       define_method(:install) do
         bin.install "jose"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_darwin_arm64.tar.gz"
-      sha256 "8db239b893c8169ac332f6f3039cabefb740c116313f7d70c99661f0810c28aa"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.2/jose_0.4.2_darwin_arm64.tar.gz"
+      sha256 "c3bf8935feb06f605b3ac6be93cd99c69f026d1dc72623dc460a4df3494574f0"
 
       define_method(:install) do
         bin.install "jose"
@@ -29,15 +29,15 @@ class Jose < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_linux_amd64.tar.gz"
-      sha256 "c6c16f2a1884ddb4aa655c202dd8ab0c4427f0309b38499fa6162276a621ad61"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.2/jose_0.4.2_linux_amd64.tar.gz"
+      sha256 "1c7f76821111d3b137c21ff58675049b61cdc2a4875ff2b254d9aa1ddb0d7521"
       define_method(:install) do
         bin.install "jose"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/jose/releases/download/v0.4.1/jose_0.4.1_linux_arm64.tar.gz"
-      sha256 "f0f4a93b4d3e1c58bd322750129e8018659aff39d2289061922481a61937d1bc"
+      url "https://github.com/nao1215/jose/releases/download/v0.4.2/jose_0.4.2_linux_arm64.tar.gz"
+      sha256 "585db3362ba973d8fb0a0c00a097bbc617ffde657dee280555fffba54f93de01"
       define_method(:install) do
         bin.install "jose"
       end
