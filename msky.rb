@@ -4,30 +4,30 @@
 class Msky < Formula
   desc "Misskey client for the terminal that draws pictures and videos inline"
   homepage "https://github.com/nao1215/misskey-terminal-client"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.0/msky-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "5d005d21dacb90acd8e3a4b7eea84ed236e4619507ce300f50756c321536367f"
+      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.1/msky-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b4c5b55322731dddebef1568bad0df3577278f04c102ee1114cf79a102e59c7e"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.0/msky-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f691133ade3fb747504ff59d97e8da2eb7f27d6abe34866e020c896e63f0d886"
+      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.1/msky-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "fafa8280381ab88a6ad36b009cdb427be6daa2b484473dfa66af072f4ed885e0"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.0/msky-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "15d3b68ceb856461480d7f52db8dbde26137ee7915f702ac6565803750465bbd"
+      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.1/msky-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b67961be12c34391a52f20b31431b5c9ecd181656031989c30ac4b565db6f34c"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.0/msky-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ccd60012d04c90cd39f6960dfbc62a84a7edc8535e80971e7188b0a48c347a23"
+      url "https://github.com/nao1215/misskey-terminal-client/releases/download/v0.1.1/msky-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c1d260744e590bd0303082307e97ae9f89fba7ae4c5d89076831c54267f3f676"
     end
   end
 
